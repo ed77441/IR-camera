@@ -3,9 +3,9 @@ This project is IOT-related. The way how it works is that when IR dectect people
 And user can go to website to see the status, it will constantly update itself as well.
 
 
-##Demo
+<h1>Demo</h1>
+<h3>Desktop</h3>
 
-*Desktop*
 
 <p align="center">
   <img src="https://i.imgur.com/fk4J4x3.png">
@@ -16,11 +16,12 @@ And user can go to website to see the status, it will constantly update itself a
   <img src="https://i.imgur.com/QQgvwbH.png">
 </p>
 
-*Mobile*
+<h3>Mobile</h3>
+
 
 <p align="center">
   <img src="https://i.imgur.com/VHP1Vq9.png">
-  <img src="https://i.imgur.com/LlznuO5.png">
   <img src="https://i.imgur.com/hP2bJCp.png">
+  <img src="https://i.imgur.com/LlznuO5.png">
   <img src="https://i.imgur.com/7KYVbwF.png">
 </p>
