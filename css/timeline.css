@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Galdeano&family=Open+Sans&family=Sriracha&family=Quicksand:wght@700&display=swap');
+
+#timeline-wrapper {
+  margin: 20px 0;
+}
+
+.tab-container {
+  display: flex;
+  height: 40px;
+  margin: 20px auto;
+  width: 90%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.tab-item:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.tab-item:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.tab-item {
+  flex-grow: 1;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: rgb(238, 238, 238);
+  color: rgb(99, 122, 145);
+  border: 2px solid rgb(99, 122, 145);
+  transition: all 0.2s;
+}
+
+.active-tab {
+  background-color: rgb(99, 122, 145);
+  color: white;
+}
+
+.tab-content {
+  display: none;
+}
+
+.active-tab-content {
+  display: block;
+}
+
+#timeline {
+  margin: 40px 0;
+  margin-left: 20px;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+#timeline:before {
+  content: "";
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  border-left: 5px dashed #ffad99;
+}
+
+#timeline li {
+  position: relative;
+  padding: 20px 15px 10px 20px;
+  font-size: 0;
+}
+
+#timeline li > div {
+  background-color: #3f3f3f;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: #ff8566;
+}
+
+.number:before, .number:after {
+  content: "";
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: absolute;
+  background: #00cca3;
+  left: -6px;
+  top: -1px;
+}
+
+.number:after {
+  top: calc(100% - 1px);
+}
+
+.number span {
+  position: absolute;
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  left: -45px;
+  font-weight: bold;
+  color: #3f3f3f;
+}
+
+.number span:first-child {
+  top: -1px;
+}
+
+.number span:last-child {
+  top: calc(100% - 1px);
+}
+
+.hasGap {
+  margin-top: 80px;
+}
+
+.captured-header {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.captured-header img {
+  width: 16px;
+}
+
+.captured-header h3 {
+  display: inline-block;
+  font-family: 'Galdeano', sans-serif;
+  margin: 5px 0;
+  color: white;
+}
+
+.captured-box {
+    transition: opacity 1s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.captured-box.opened {
+    opacity: 1;
+    height: auto;
+}
+
+.captured-box img {
+  width: 31.2%;
+  margin: 1%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#error h2 {
+  font-size: 30px;
+}
+
+#error p {
+  font-size: 20px;
+}
+
+#error {
+  text-align: center;
+  font-family: 'Sriracha', cursive;
+  color: gray;
+}
+
+@media only screen and (min-width: 720px) {
+  .tab-container {
+    width: 60%;
+    height: 45px;
+  }
+
+  .tab-item {
+    font-size: 20px;
+    border-width: 3px;
+  }
+
+  #timeline {
+    margin: 50px 0;
+    margin-left: 40px;
+  }
+
+  #timeline:before {
+    width: 8px;
+    border-left: 8px dashed #ffad99;
+  }
+
+  #timeline li {
+    padding-left: 30px;
+  }
+
+  .number {
+    width: 8px;
+  }
+
+  .number:before, .number:after {
+    width: 15px;
+    height: 15px;
+    border: 3px solid #fff;
+    left: -7px;
+  }
+
+  .number span {
+    font-size: 20px;
+    left: -60px;
+  }
+
+  .number span:first-child, .number:before {
+    top: -5px;
+  }
+
+  .number span:last-child, .number:after {
+    top: calc(100% - 5px) ;
+  }
+
+  .captured-header {
+    font-size: 22px;
+  }
+
+  .captured-header img {
+    width: 18px;
+  }
+
+  .captured-box img {
+    width: 18%;
+    margin: 1%;
+    border-radius: 5px;
+  }
+
+  #error h2 {
+    font-size: 35px;
+  }
+
+  #error p {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .tab-container {
+    width: 50%;
+    height: 50px;
+  }
+
+  .tab-item {
+    font-size: 22px;
+    border-width: 4px;
+  }
+
+  .hasGap {
+    margin-top: 100px;
+  }
+
+  #timeline {
+    margin: 60px 0;
+    margin-left: 50px;
+  }
+
+  #timeline li {
+    padding: 30px 30px 30px 40px;
+  }
+
+  .captured-header {
+    font-size: 25px;
+    padding: 4px;
+  }
+
+  .captured-header img {
+    width: 20px;
+  }
+
+  #error h2 {
+    font-size: 40px;
+  }
+
+  #error p {
+    font-size: 30px;
+  }
+}

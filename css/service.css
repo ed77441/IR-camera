@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Jaldi&family=Maven+Pro&family=Source+Sans+Pro&family=Titillium+Web:wght@600&family=Varela+Round&display=swap');
+
+#centered {
+  margin: 0 auto;
+  width: 300px;
+  max-width: 1200px;
+  color: #3f3f3f;
+}
+
+#message {
+  margin: 50px 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-family: 'Jaldi', sans-serif;
+  font-size: 28px;
+}
+
+.price-box {
+  width: 300px;
+  border-radius: 20px;
+  border: 2px solid lightGray;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 40px 0;
+  padding: 10px;
+  height: 520px;
+  position: relative;
+  vertical-align: top;
+}
+
+.price-box h3, .price-box p{
+  text-align: center;
+}
+
+.price-box h3 {
+  font-family: 'Vollkorn', serif;
+  font-size: 24px;
+  margin: 30px 0;
+}
+
+.price-box p {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 32px;
+}
+
+.price-box ul {
+  list-style-type: none;
+}
+
+.price-box li {
+  font-family: 'Varela Round', sans-serif;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.price-box li:before {
+  content: '✓';
+  color: green;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.price-box button {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 30px;
+  padding: 10px 50px;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 18px;
+  color: white;
+  background-color: #00cca3;
+  transition: background-color 0.5s;
+}
+
+.price-box button:hover {
+  background-color: #00b38f;
+}
+
+.QA-box {
+  border-bottom: 1px solid lightGray;
+  font-family: 'Maven Pro', sans-serif;
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+
+.QA-box p {
+  color: gray;
+}
+
+@media only screen and (min-width: 720px) {
+  #centered {
+    width: 700px;
+  }
+
+  #price-box-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+
+@media only screen and (min-width: 1280px) {
+  #centered {
+    width: 1080px;
+  }
+
+  #message {
+    font-size: 28px;
+    margin: 60px;
+  }
+
+  .section-title {
+    font-size: 35px;
+  }
+
+  #QA-box-wrapper {
+    font-size: 0;
+  }
+
+  .QA-box {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    height: 200px;
+    width: 50%;
+  }
+
+  .QA-box h3 {
+    font-size: 22px;
+  }
+
+  .QA-box p {
+    font-size: 20px;
+  }
+}

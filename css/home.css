@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bree+Serif&family=Playball&family=Gochi+Hand&display=swap');
+
+#background {
+  position: relative;
+  text-align: center;
+}
+
+#background img {
+  width: 100%;
+  margin-top: 6px;
+}
+
+#background .quote {
+  position: absolute;
+  font-size: calc(2vw + 10px);
+  font-family: 'Playball', cursive;
+  color: #3f3f3f;
+}
+
+#background .first-quote {
+  left: 25%;
+  bottom: 20%;
+}
+
+#background .second-quote {
+  right: 15%;
+  bottom: 10%;
+}
+
+#ds-caption {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Jaldi', sans-serif;
+  color: #3f3f3f;
+}
+
+#ds-wrapper {
+  margin: 10px auto;
+  width: 300px;
+}
+
+#ds-wrapper ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+#ds-wrapper li {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  padding: 25px;
+  font-family: 'Abel', sans-serif;
+  font-size: 16px;
+}
+
+.ds-item {
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+  text-align: center;
+  height: 320px;
+  width: 85%;
+}
+
+.ds-item img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 50%;
+}
+
+.ds-item div {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgb(0, 179, 143);
+  margin-top: 20px;
+}
+
+.ds-item h3 {
+  font-size: 16px;
+}
+
+.ds-item p {
+  color: gray;
+  padding: 5px 30px;
+  text-align: left;
+}
+
+@media only screen and (min-width: 600px) {
+  #ds-caption{
+    font-size: 28px;
+  }
+
+  #ds-wrapper {
+    margin: 10px auto;
+    width: 590px;
+  }
+
+  #ds-wrapper li {
+    width: 50%;
+    font-size: 18px;
+  }
+
+  .ds-item {
+    height: 300px;
+  }
+
+  .ds-item  div {
+    width: 80px;
+    height: 80px;
+  }
+
+  .ds-item h3 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  #ds-caption{
+    font-size: 35px;
+  }
+
+  #ds-wrapper {
+    margin: 10px auto;
+    width: 1000px;
+  }
+
+  #ds-wrapper li {
+    width: 33.3%;
+    font-size: 18px;
+  }
+
+  .ds-item h3 {
+    font-size: 22px;
+  }
+}

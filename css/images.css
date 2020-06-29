@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&family=M+PLUS+Rounded+1c:wght@500&family=Quicksand&display=swap');
+
+.section-title {
+  align-items: center;
+  text-align: center;
+  margin: 25px 0;
+  color: rgb(64, 64, 64);
+  font-size: 25px;
+  font-family: 'Jaldi', sans-serif;
+}
+
+#centered-panel {
+  width: 300px;
+  margin: 0 auto;
+}
+/*calendar*/
+#calendar {
+  height: 100%;
+  border: 1px solid #aaa;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#month-selector, #year-selector, #search select  {
+  border:0;
+  background:none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+  font-size: inherit;
+  font-family: inherit;
+  padding : 5px 0;
+}
+/*calendar-section1*/
+#selected-result {
+  display: block;
+  vertical-align: top;
+  height: 100%;
+  text-align: center;
+  background: #00cca3;
+}
+
+#selected-result p {
+  padding-top: 10px;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+}
+
+#weekday-tag {
+  font-size: 18px;
+  padding: 10px 0 !important;
+  background-color: #00b38f;
+}
+
+#month-tag {
+  font-size: 30px;
+}
+
+#date-tag {
+  font-size: 50px;
+}
+
+#year-tag {
+  font-size: 28px;
+  padding-bottom: 25px !important;
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/*calendar-section2*/
+#date-selector {
+  display: block;
+  vertical-align: top;
+  height: 100%;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+#year-month {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+#year-month button:first-child {
+  margin-left: 10px;
+}
+
+#year-month span {
+  font-size: 20px;
+  font-family: Arial;
+}
+
+#year-month button:last-child {
+  margin-right: 10px;
+}
+
+#year-month img {
+  width: 15px;
+  height: 15px;
+}
+
+#month-selector option, #year-selector option{
+  background-color: rgb(238, 238, 238);
+}
+
+.col-7 {
+  font-size: 0;
+}
+
+.col-7 span {
+  display: inline-block;
+  width: 14.2%;
+  padding: 5px 0;
+  font-size: 15px;
+  font-family: inherit;
+  text-align: center;
+}
+
+#weekday-labels {
+  color: #ff6600;
+}
+
+#date-list {
+  margin-bottom: 10px;
+}
+
+#date-list button {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 5px 0;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+#date-list button:disabled {
+  cursor:default;
+}
+
+.tagged {
+  color: red;
+}
+
+.valid:hover {
+  background-color: lightGray;
+  transition: background-color 0.3s ease 0s;
+}
+
+#selected-date {
+  border-radius: 50%;
+  background-color: #00cca3;
+  color:  white;
+}
+
+#selected-date.tagged {
+    color: yellow;
+}
+
+/*calendar-section3*/
+#search-wrapper {
+  background-color: #00cca3;
+}
+
+#search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  padding: 0 15px;
+  font-size: 20px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+#cam-wrapper {
+  display: inline-block;
+}
+
+#cam-wrapper select {
+  height: 75%;
+  color: #006652;
+  vertical-align: middle;
+}
+
+#cam-wrapper img  {
+  width: 20px;
+  filter: invert(100%);
+}
+
+#search-btn {
+  border-radius: 5px;
+  color: white;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+#search-btn:hover {
+  background-color: #00b38f;
+}
+
+#search-btn img {
+  width: 18px;
+}
+
+@media only screen and (min-width: 720px) {
+  #centered-panel {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  .section-title {
+      margin: 35px 0;
+      font-size: 28px;
+  }
+
+  #calendar {
+    font-size: 0;
+    display: table;
+  }
+
+  #selected-result {
+    display: table-cell;
+    width: 200px;
+  }
+
+  #selected-result p {
+    padding-top: 30px;
+  }
+
+  #year-month span {
+    font-size: 22px;
+  }
+
+  .col-7 span {
+    font-size: 18px;
+  }
+
+  #date-selector {
+    display: table-cell;
+    width: 400px;
+  }
+
+  #date-list button {
+    width: 35px;
+    height: 35px;
+  }
+
+  #search-wrapper {
+    display: table-cell;
+    width: 100px;
+    height: 100%;
+  }
+
+  #search {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  #cam-wrapper {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  #cam-wrapper img{
+    display: block;
+    margin: 0 auto;
+  }
+
+  #cam-wrapper select{
+    display: block;
+  }
+
+  #search-btn {
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #centered-panel {
+    width: 1130px;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    font-size: 35px;
+    border-bottom-width: 2px;
+  }
+
+  #selected-result {
+    width: 320px;
+  }
+
+  #selected-result p {
+    padding-top: 60px;
+  }
+
+  #weekday-tag {
+    font-size: 25px;
+  }
+
+  #month-tag {
+    font-size: 40px;
+  }
+
+  #date-tag {
+    font-size: 55px;
+  }
+
+  #year-tag {
+    font-size: 40px;
+  }
+
+  #year-month {
+    font-size: 35px;
+  }
+
+  #year-month img {
+    width: 20px; /*20*/
+    height: 20px;
+  }
+
+  #year-month span {
+    font-size: 30px;
+  }
+
+  .col-7 span {
+    font-size: 25px;
+  }
+
+  #date-selector {
+    width: 610px;
+  }
+
+  #date-list button {
+    width: 50px;
+    height: 50px;
+  }
+
+  #search-wrapper {
+    width: 200px;
+  }
+
+  #cam-wrapper img, #cam-wrapper select{
+    display: inline-block;
+  }
+
+  #cam-wrapper select, #search-btn {
+    height: 50px;
+    font-size: 30px;
+  }
+
+  #cam-wrapper img {
+    vertical-align: middle;
+    width: 30px;
+  }
+
+  #search-btn img {
+    width: 25px;
+  }
+}

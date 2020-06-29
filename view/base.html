@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{TITLE}</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/css/base.css"/>
+  <link rel="shortcut icon" href="#" />
+  {STYLES}
+  <script src="/js/base.js"></script>
+  {SCRIPTS}
+</head>
+
+<body>
+  <header>
+    <div id="header-inner">
+      <a href="/" class="logo">SECURIV</a>
+      <nav id="desktop-nav">
+        <button class="hide-desktop" id="ham">
+          <img src="/icon/ham.png"/>
+        </button>
+
+        <ul class="show-desktop hide-mobile">
+          <li class="home"><a href="/">HOME</a></li>
+          <li class="camera"><a href="/?page=images">IMAGES</a></li>
+          <li class="service"><a href="/?page=service">SERVICE</a></li>
+          <li class="about"><a href="/?page=about">ABOUT</a></li>
+         </ul>
+      </nav>
+    </div>
+  </header>
+
+  <nav id="mobile-nav">
+    <ul class="show-mobile hide-desktop menu-closed" id="mobile-menu">
+      <li class="home-m"><a href="/">HOME</a></li>
+      <li class="camera-m"><a href="/?page=images">IMAGE</a></li>
+      <li class="service-m"><a href="/?page=service">SERVICE</a></li>
+      <li class="about-m"><a href="/?page=about">ABOUT</a></li>
+     </ul>
+  </nav>
+
+
+  <main>
+    {CONTENT}
+  </main>
+  <footer>
+    <p> Copyright@ 2020 Yuntech. All right reserved.</p>
+  </footer>
+</body>
+</html>
