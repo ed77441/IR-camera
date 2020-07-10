@@ -1,27 +1,53 @@
 # IR-camera
-This project is IOT-related. The way how it works is that when IR dectect people it will trigger camera and send data back to back end server.
-And user can go to website to see the status, it will constantly update itself as well.
+This project is IOT-related. The way it works is that when IR dectect people it will trigger camera and send data back to server.
+And user can go to website to see the status.
 
+## Description
+* Sensors consists of a raspiberry pi, ir detector and camera module
+* Website page is generate by php template
+* Only image page is interactable, the others are just dummy pages
+* Image page's `javascript` code is written in MVC pattern 
+* Image page will constantly update itself as well if your search day is today.
+* Click on calendar to select and search for images
+* If there is some images on certain day, then it will be marked as red color
 
-<h1>Demo</h1>
-<h3>Desktop</h3>
+## External Library
+* [chart.js](https://www.chartjs.org/) for drawing statistics bar chart
 
+## Project architecture
 
-<p align="center">
-  <img src="https://i.imgur.com/fk4J4x3.png">
-  <img src="https://i.imgur.com/phjiA2o.png">
-  <img src="https://i.imgur.com/N50U57P.png">
-  <img src="https://i.imgur.com/2qkMlLg.png">
-  <img src="https://i.imgur.com/1aw6KzA.png">
-  <img src="https://i.imgur.com/QQgvwbH.png">
-</p>
+## Demo
 
-<h3>Mobile</h3>
+### Desktop view
 
+#### Home
+![home-d](https://i.imgur.com/fk4J4x3.png)
 
-<p align="center">
-  <img src="https://i.imgur.com/VHP1Vq9.png">
-  <img src="https://i.imgur.com/hP2bJCp.png">
-  <img src="https://i.imgur.com/LlznuO5.png">
-  <img src="https://i.imgur.com/7KYVbwF.png">
-</p>
+#### Image-display
+![image-dd](https://i.imgur.com/phjiA2o.png)
+
+#### Image-barchart
+![image-db](https://i.imgur.com/N50U57P.png)
+
+#### Image-modal
+![image-dm](https://i.imgur.com/2qkMlLg.png)
+
+#### Service
+![service-d](https://i.imgur.com/1aw6KzA.png)
+
+#### About
+![about-d](https://i.imgur.com/QQgvwbH.png)
+
+### Mobile view
+
+#### Home
+![home-m](https://i.imgur.com/VHP1Vq9.png)
+
+#### Image
+![image-m](https://i.imgur.com/LlznuO5.png)
+
+#### Service
+![service-m](https://i.imgur.com/hP2bJCp.png)
+
+#### About
+![about-m](https://i.imgur.com/7KYVbwF.png)
