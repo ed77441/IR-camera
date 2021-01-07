@@ -21,33 +21,33 @@ And user can go to website to see the status.
 ### Desktop view
 
 #### Home
-![home-d](https://i.imgur.com/fk4J4x3.png)
+![home-d](https://github.com/ed77441/IR-camera/blob/master/display/1.png)
 
 #### Image-display
-![image-dd](https://i.imgur.com/phjiA2o.png)
+![image-dd](https://github.com/ed77441/IR-camera/blob/master/display/2.png)
 
 #### Image-barchart
-![image-db](https://i.imgur.com/N50U57P.png)
+![image-db](https://github.com/ed77441/IR-camera/blob/master/display/3.png)
 
 #### Image-modal
-![image-dm](https://i.imgur.com/2qkMlLg.png)
+![image-dm](https://github.com/ed77441/IR-camera/blob/master/display/4.png)
 
 #### Service
-![service-d](https://i.imgur.com/1aw6KzA.png)
+![service-d](https://github.com/ed77441/IR-camera/blob/master/display/5.png)
 
 #### About
-![about-d](https://i.imgur.com/QQgvwbH.png)
+![about-d](https://github.com/ed77441/IR-camera/blob/master/display/6.png)
 
 ### Mobile view
 
 #### Home
-![home-m](https://i.imgur.com/VHP1Vq9.png)
+![home-m](https://github.com/ed77441/IR-camera/blob/master/display/7.png)
 
 #### Image
-![image-m](https://i.imgur.com/LlznuO5.png)
+![image-m](https://github.com/ed77441/IR-camera/blob/master/display/8.png)
 
 #### Service
-![service-m](https://i.imgur.com/hP2bJCp.png)
+![service-m](https://github.com/ed77441/IR-camera/blob/master/display/9.png)
 
 #### About
-![about-m](https://i.imgur.com/7KYVbwF.png)
+![about-m](https://github.com/ed77441/IR-camera/blob/master/display/10.png)
